@@ -27,10 +27,11 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
       Problem0001
-      Problem0002
-      Problem0003
+	  Problem0002
+	  Problem0003
+	  Problem0004
+	  Problem0005
   other-modules:
       Paths_project_euler
   hs-source-dirs:
