@@ -32,6 +32,8 @@ library
 	  Problem0003
 	  Problem0004
 	  Problem0005
+	  Problem0006
+	  Problem0007
   other-modules:
       Paths_project_euler
   hs-source-dirs:
