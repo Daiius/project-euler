@@ -34,6 +34,9 @@ library
 	  Problem0005
 	  Problem0006
 	  Problem0007
+	  Problem0008
+	  Problem0009
+	  Problem0010
   other-modules:
       Paths_project_euler
   hs-source-dirs:
@@ -66,4 +69,8 @@ test-suite project-euler-test
   build-depends:
       base >=4.7 && <5
     , project-euler
+    , HUnit
+    , silently
+    , test-framework
+    , test-framework-hunit
   default-language: Haskell2010
