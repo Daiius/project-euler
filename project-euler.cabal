@@ -37,6 +37,7 @@ library
 	  Problem0008
 	  Problem0009
 	  Problem0010
+	  Problem0011
   other-modules:
       Paths_project_euler
   hs-source-dirs:
@@ -44,6 +45,7 @@ library
   build-depends:
       base >=4.7 && <5
 	  , data-ordlist
+	  , array
   default-language: Haskell2010
 
 executable project-euler-exe
