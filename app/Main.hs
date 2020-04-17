@@ -11,6 +11,7 @@ import qualified Problem0008
 import qualified Problem0009
 import qualified Problem0010
 import qualified Problem0011
+import qualified Problem0012
 
 main :: IO ()
 main = do
@@ -25,3 +26,4 @@ main = do
     Problem0009.showAnswer
     Problem0010.showAnswer
     Problem0011.showAnswer
+    Problem0012.showAnswer
