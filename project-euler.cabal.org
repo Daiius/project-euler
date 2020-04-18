@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 99e9e6a2e84195080ec50636161feb25cf6adbc8182695549db0fcd0486836d2
+-- hash: 2607ec90806d24c0e7bd90d0a54683580072bb07aea73836c0d73a92cb3728c3
 
 name:           project-euler
 version:        0.1.0.0
@@ -27,32 +27,28 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
       Problem0001
-      Problem0002
-      Problem0003
-      Problem0004
-      Problem0005
-      Problem0006
-      Problem0007
-      Problem0008
-      Problem0009
-      Problem0010
-      Problem0011
-      Problem0012
-      Problem0013
-      Problem0014
-      Problem0015
-      Problem0016
+	  Problem0002
+	  Problem0003
+	  Problem0004
+	  Problem0005
+	  Problem0006
+	  Problem0007
+	  Problem0008
+	  Problem0009
+	  Problem0010
+	  Problem0011
+	  Problem0012
+	  Problem0013
   other-modules:
       Paths_project_euler
   hs-source-dirs:
       src
   build-depends:
-      array
-    , base >=4.7 && <5
-    , data-ordlist
-    , vector
+      base >=4.7 && <5
+	  , data-ordlist
+	  , array
+	  , vector
   default-language: Haskell2010
 
 executable project-euler-exe
@@ -63,11 +59,8 @@ executable project-euler-exe
       app
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      array
-    , base >=4.7 && <5
-    , data-ordlist
+      base >=4.7 && <5
     , project-euler
-    , vector
   default-language: Haskell2010
 
 test-suite project-euler-test
@@ -79,9 +72,10 @@ test-suite project-euler-test
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      array
-    , base >=4.7 && <5
-    , data-ordlist
+      base >=4.7 && <5
     , project-euler
-    , vector
+    , HUnit
+    , silently
+    , test-framework
+    , test-framework-hunit
   default-language: Haskell2010

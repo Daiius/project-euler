@@ -21,6 +21,9 @@ description:         Please see the README on GitHub at <https://github.com/gith
 
 dependencies:
 - base >= 4.7 && < 5
+- data-ordlist
+- array
+- vector
 
 library:
   source-dirs: src
@@ -28,7 +31,7 @@ library:
 executables:
   project-euler-exe:
     main:                Main.hs
-    source-dirs:         app, src
+    source-dirs:         app
     ghc-options:
     - -threaded
     - -rtsopts
