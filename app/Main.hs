@@ -16,7 +16,12 @@ module Main where
 --import qualified Problem0014
 --import qualified Problem0015
 --import qualified Problem0016
-import qualified Problem0017
+--import qualified Problem0017
+--import qualified Problem0018
+--import qualified Problem0019
+--import qualified Problem0020
+--import qualified Problem0021
+import qualified Problem0022
 
 main :: IO ()
 main = do
@@ -36,4 +41,11 @@ main = do
 --    Problem0014.showAnswer
 --    Problem0015.showAnswer
 --    Problem0016.showAnswer
-    Problem0017.showAnswer
+--    Problem0017.showAnswer
+--    Problem0018.showAnswer
+--    Problem0019.showAnswer
+--    Problem0020.showAnswer
+--    Problem0021.showAnswer
+      Problem0022.showAnswer
+
+
