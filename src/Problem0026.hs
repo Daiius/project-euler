@@ -4,8 +4,11 @@ module Problem0026 (
 
 import Data.Ratio
 import Data.Function ((&))
-import Data.List (nub, elemIndex, elemIndices, maximumBy)
+import Data.List (nub, elemIndex, elemIndices, maximumBy, (!!))
 import Data.Ord (comparing)
+import Debug.Trace
+
+import qualified Data.Vector as V
 
 showAnswer :: IO ()
 showAnswer = do
@@ -22,11 +25,17 @@ showAnswer = do
     --      $ map (\x -> map length x) 
     --      $ map (\x -> [elemIndices (x !! j) x | j <- [0..length x - 1]]) 
     --      $ take 10 [take i $ divList 101 | i <- [1..] ]
-    print $ calcReccuringLength 6
-    print $ calcReccuringLength 5
-    print $ calcReccuringLength 7
-    let rlist = map calcReccuringLength [1..1000]
+    -- print $ calcReccuringLength 6
+    --print $ calcReccuringLength 5
+    --print $ calcReccuringLength 7
 
+    --print $ findFirstDuplicateIndices $ divList 7
+    print $ findFirstDuplicateIndices $ divList 7
+    print $ findFirstDuplicateIndices $ divList 5
+    print $ findFirstDuplicateIndices $ divList 6
+   -- print $ map calcReccuringLength' [1..10]
+    let rlist = map calcReccuringLength' [1..1000]
+    
     print $ rlist
     print $ maximumBy (comparing fst)  $ zip rlist [1..]
 
@@ -36,6 +45,28 @@ showAnswer = do
 --searchDuplicateBy :: (a -> a -> Bool) -> [a] -> (Int, Int)
 --searchDuplicateBy f list = case (list !! i) `elemIndex` (drop i list) of
 --                            Just x -> 
+
+
+
+findFirstDuplicateIndices :: [(Integer, Integer)] -> (Int, Int)
+findFirstDuplicateIndices list = findFirstDuplicateIndices' list (0, 1)
+    where
+        findFirstDuplicateIndices' :: [(Integer, Integer)] -> (Int, Int) -> (Int, Int)
+        findFirstDuplicateIndices' list (i, j)
+            | (list !! i) == (list !! j)
+                = if list !! i == (0,0) then
+                    (0, 0)
+                  else
+                    (i, j)
+            | otherwise
+                = if i >= j - 1 then
+                    findFirstDuplicateIndices' list (0, j + 1)
+                  else
+                    findFirstDuplicateIndices' list (i + 1, j)
+
+                            
+calcReccuringLength' :: Integer -> Int
+calcReccuringLength' n = (\(a, b) -> b - a) $ findFirstDuplicateIndices $ divList n
 
 
 calcReccuringLength :: Integer -> Int
@@ -53,8 +84,8 @@ calcReccuringLength n
 
 divList :: Integer -> [(Integer, Integer)]
 divList n = 
-            takeWhile (/= (0, 0)) 
-            $ iterate (nextDivElem n) (10, n)
+            --takeWhile (/= (0, 0)) 
+            {-$-} iterate (nextDivElem n) (10, n)
 
 appendDivList :: Integer -> [(Integer, Integer)] -> [(Integer, Integer)]
 appendDivList n dl
@@ -97,5 +128,6 @@ searchRecurringPoint numbers = (startIndex, reccuringLength)
 subsequences numbers = [ drop i $ take j $ numbers | i <- [0..limit-1], j <- [1..limit], i + j <= limit]
     where
         limit = length numbers
+
 
 
