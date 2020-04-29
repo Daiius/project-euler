@@ -30,7 +30,8 @@ module Main where
 --import qualified Problem0028
 --import qualified Problem0029
 --import qualified Problem0030
-import qualified Problem0031
+--import qualified Problem0031
+import qualified Problem0032
 
 main :: IO ()
 main = do
@@ -64,6 +65,7 @@ main = do
 --    Problem0028.showAnswer
 --    Problem0029.showAnswer
 --    Problem0030.showAnswer
-      Problem0031.showAnswer
+--    Problem0031.showAnswer
+      Problem0032.showAnswer
 
 
