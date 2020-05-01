@@ -1,37 +1,38 @@
 module Main where
 
---import qualified Problem0001
---import qualified Problem0002
---import qualified Problem0003
---import qualified Problem0004
---import qualified Problem0005
---import qualified Problem0006
---import qualified Problem0007
---import qualified Problem0008
---import qualified Problem0009
---import qualified Problem0010
---import qualified Problem0011
---import qualified Problem0012
---import qualified Problem0013
---import qualified Problem0014
---import qualified Problem0015
---import qualified Problem0016
---import qualified Problem0017
---import qualified Problem0018
---import qualified Problem0019
---import qualified Problem0020
---import qualified Problem0021
---import qualified Problem0022
---import qualified Problem0023
---import qualified Problem0024
---import qualified Problem0025
---import qualified Problem0026
---import qualified Problem0027
---import qualified Problem0028
---import qualified Problem0029
---import qualified Problem0030
---import qualified Problem0031
+import qualified Problem0001
+import qualified Problem0002
+import qualified Problem0003
+import qualified Problem0004
+import qualified Problem0005
+import qualified Problem0006
+import qualified Problem0007
+import qualified Problem0008
+import qualified Problem0009
+import qualified Problem0010
+import qualified Problem0011
+import qualified Problem0012
+import qualified Problem0013
+import qualified Problem0014
+import qualified Problem0015
+import qualified Problem0016
+import qualified Problem0017
+import qualified Problem0018
+import qualified Problem0019
+import qualified Problem0020
+import qualified Problem0021
+import qualified Problem0022
+import qualified Problem0023
+import qualified Problem0024
+import qualified Problem0025
+import qualified Problem0026
+import qualified Problem0027
+import qualified Problem0028
+import qualified Problem0029
+import qualified Problem0030
+import qualified Problem0031
 import qualified Problem0032
+import qualified Problem0033
 
 main :: IO ()
 main = do
@@ -66,6 +67,7 @@ main = do
 --    Problem0029.showAnswer
 --    Problem0030.showAnswer
 --    Problem0031.showAnswer
-      Problem0032.showAnswer
+--    Problem0032.showAnswer
+      Problem0033.showAnswer
 
 
