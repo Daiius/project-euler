@@ -24,6 +24,7 @@ dependencies:
 - data-ordlist
 - array
 - vector
+- template-haskell
 
 library:
   source-dirs: src

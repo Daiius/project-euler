@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 3b2ceaae7864c4b278d97c926ebe45e9aad86239a16c58a79425ed5318f76bd9
+-- hash: 92f25f02fd5901e06a4328f5e86188d5b2858b4a2914d5c7f9cc1e789aef60dd
 
 name:           project-euler
 version:        0.1.0.0
@@ -61,6 +61,8 @@ library
       Problem0031
       Problem0032
       Problem0033
+      Problem0034
+      Problem0035
   other-modules:
       Paths_project_euler
   hs-source-dirs:
@@ -69,6 +71,7 @@ library
       array
     , base >=4.7 && <5
     , data-ordlist
+    , template-haskell
     , vector
   default-language: Haskell2010
 
@@ -84,6 +87,7 @@ executable project-euler-exe
     , base >=4.7 && <5
     , data-ordlist
     , project-euler
+    , template-haskell
     , vector
   default-language: Haskell2010
 
@@ -100,5 +104,6 @@ test-suite project-euler-test
     , base >=4.7 && <5
     , data-ordlist
     , project-euler
+    , template-haskell
     , vector
   default-language: Haskell2010

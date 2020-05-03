@@ -33,41 +33,50 @@ import qualified Problem0030
 import qualified Problem0031
 import qualified Problem0032
 import qualified Problem0033
+import qualified Problem0034
+import qualified Problem0035
 
 main :: IO ()
 main = do
---    Problem0001.showAnswer
---    Problem0002.showAnswer
---    Problem0003.showAnswer
---    Problem0004.showAnswer
---    Problem0005.showAnswer
---    Problem0006.showAnswer
---    Problem0007.showAnswer
---    Problem0008.showAnswer
---    Problem0009.showAnswer
---    Problem0010.showAnswer
---    Problem0011.showAnswer
---    Problem0012.showAnswer
---    Problem0013.showAnswer
---    Problem0014.showAnswer
---    Problem0015.showAnswer
---    Problem0016.showAnswer
---    Problem0017.showAnswer
---    Problem0018.showAnswer
---    Problem0019.showAnswer
---    Problem0020.showAnswer
---    Problem0021.showAnswer
---    Problem0022.showAnswer
---    Problem0023.showAnswer
---    Problem0024.showAnswer
---    Problem0025.showAnswer
---    Problem0026.showAnswer
---    Problem0027.showAnswer
---    Problem0028.showAnswer
---    Problem0029.showAnswer
---    Problem0030.showAnswer
---    Problem0031.showAnswer
---    Problem0032.showAnswer
-      Problem0033.showAnswer
+    --sequence_ problems
+    last problems
+
+problems = [    
+    Problem0001.showAnswer
+  , Problem0002.showAnswer
+  , Problem0003.showAnswer
+  , Problem0004.showAnswer
+  , Problem0005.showAnswer
+  , Problem0006.showAnswer
+  , Problem0007.showAnswer
+  , Problem0008.showAnswer
+  , Problem0009.showAnswer
+  , Problem0010.showAnswer
+  , Problem0011.showAnswer
+  , Problem0012.showAnswer
+  , Problem0013.showAnswer
+  , Problem0014.showAnswer
+  , Problem0015.showAnswer
+  , Problem0016.showAnswer
+  , Problem0017.showAnswer
+  , Problem0018.showAnswer
+  , Problem0019.showAnswer
+  , Problem0020.showAnswer
+  , Problem0021.showAnswer
+  , Problem0022.showAnswer
+  , Problem0023.showAnswer
+  , Problem0024.showAnswer
+  , Problem0025.showAnswer
+  , Problem0026.showAnswer
+  , Problem0027.showAnswer
+  , Problem0028.showAnswer
+  , Problem0029.showAnswer
+  , Problem0030.showAnswer
+  , Problem0031.showAnswer
+  , Problem0032.showAnswer
+  , Problem0033.showAnswer
+  , Problem0034.showAnswer
+  , Problem0035.showAnswer
+   ]
 
 
