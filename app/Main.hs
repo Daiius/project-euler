@@ -41,6 +41,7 @@ import qualified Problem0038
 import qualified Problem0039
 import qualified Problem0040
 import qualified Problem0041
+import qualified Problem0042
 
 main :: IO ()
 main = do
@@ -89,6 +90,7 @@ problems = [
   , Problem0039.showAnswer
   , Problem0040.showAnswer
   , Problem0041.showAnswer
+  , Problem0042.showAnswer
    ]
 
 
