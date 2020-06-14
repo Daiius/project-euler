@@ -9,7 +9,8 @@ import Debug.Trace (trace)
 
 answer :: IO ()
 answer = do
-    putStrLn "Problem 51"
+    putStrLn "Problem 51, it takes a while..."
+    print result
 
 test :: IO ()
 test = do
@@ -29,7 +30,10 @@ test = do
     print $ replaceNPrimesCountMaximum 123
     print $ replaceNPrimesCountMaximum 56003
     --print $ map replaceNPrimesCountMaximum [11..100000]
-    print $ head . filter (\(len, _) -> (len >= 8)) $ map (\x -> replaceNPrimesCountMaximum $ trace (show x ++ "\r") x)  $ filter (11 <) primes
+    let tmp = head . filter (\(len, _) -> (len >= 8)) $ map (\x -> replaceNPrimesCountMaximum $ trace ("Checking: " ++ show x ++ "... \o033[1A") x)  $ filter (11 <) primes
+    putStrLn $ "\n" ++ show tmp
+
+result = head . filter (\(len, _) -> (len >= 8)) $ map (\x -> replaceNPrimesCountMaximum $ x)  $ filter (11 <) primes
 
 
 numbers = [100]

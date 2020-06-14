@@ -5,16 +5,9 @@ import qualified Problem0051_0100
 
 main :: IO ()
 main = do
-    last tests
-    last answers
+    last problems
 
-
-answers = [
-    --Problem0001_0050.answer,
-    Problem0051_0100.answer
-    ]
-
-tests = [
-    --Problem0001_0050.test,
-    Problem0051_0100.test
+problems = [
+    Problem0001_0050.answer,
+    Problem0051_0100.solve
     ]

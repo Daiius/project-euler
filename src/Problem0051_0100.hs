@@ -1,10 +1,17 @@
 module Problem0051_0100 (
     answer,
-    test
+    test,
+    solve
     ) where
 
 
 import qualified Problem0051
+
+solve :: IO()
+solve = sequence_ [
+    Problem0051.test,
+    Problem0051.answer
+    ]
 
 answer :: IO ()
 answer = sequence_ [
