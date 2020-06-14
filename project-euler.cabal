@@ -1,10 +1,10 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.33.0.
+-- This file has been generated from package.yaml by hpack version 0.31.2.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: f704b1850de500fbbfe969508c794586cd893303ab15c2584380796deb143512
+-- hash: 99610dbbfc2714f0358ad84a6ed2c66bef9230f32d3e6425a18d6f811c2fdf83
 
 name:           project-euler
 version:        0.1.0.0
@@ -28,6 +28,7 @@ source-repository head
 library
   exposed-modules:
       Problem0001
+      Problem0001_0050
       Problem0002
       Problem0003
       Problem0004
@@ -76,6 +77,8 @@ library
       Problem0047
       Problem0048
       Problem0049
+      Problem0051
+      Problem0051_0100
   other-modules:
       Paths_project_euler
   hs-source-dirs:
