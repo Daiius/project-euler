@@ -11,6 +11,7 @@ import qualified Problem0052
 import qualified Problem0053
 import qualified Problem0054
 import qualified Problem0055
+import qualified Problem0056
 
 last2 :: [a] -> [a]
 last2 list = drop (length list - 2) list
@@ -31,7 +32,8 @@ answers = [
     Problem0052.answer,
     Problem0053.answer,
     Problem0054.answer,
-    Problem0055.answer
+    Problem0055.answer,
+    Problem0056.answer
     ]
 
 
@@ -40,6 +42,7 @@ tests = [
     Problem0052.test,
     Problem0053.test,
     Problem0054.test,
-    Problem0055.test
+    Problem0055.test,
+    Problem0056.test
     ]
 
